@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/homepage/home.css">
+    <link rel="stylesheet" href="styles/homepage/courses.css">
+    <link rel="stylesheet" href="styles/homepage/feedback.css">
+    <link rel="stylesheet" href="styles/homepage/learning.css">
+    <link rel="stylesheet" href="styles/homepage/footer.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-side">
+            <img src="images/book-icon.png" class="book-icon">
+            <a class="nav-button" href="homepage.html">EduQuest</a>
+        </div>        
+        <div class="right-side">
+            <a class="nav-button" href="homepage.html">Home</a>
+            <a class="nav-button" href="about-us.html">About Us</a>
+            <a class="nav-button" href="#contact">Contact</a>
+            <a class="nav-button" href="#register">Register</a>
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="home-container">
+            <div class="quote">"I am the wisest <br> 
+                man alive, for I know <br> 
+                one thing, and that is <br>
+                that I know nothing."
+            </div>
+            <div class="quoter">-Socrates</div>
+            <a href="#courses">
+                <button class="go-to-course">Let's Roll</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="courses" id="courses">
+        <div class="course-text">Trending Courses</div>
+        <div class="course-grid js-course-grid"></div>
+    </div>
+
+    <div class="start-learning">
+        <div class="quote-learning">“If you think education is expensive, <br>
+            try estimating the cost of ignorance.”</div>
+        <button class="start-learning-button">Start Learning</button>
+    </div>
+ 
+    <div class="feedback" id="contact">
+        <div class="feedback-text">Contact us if you <br>
+            need help with something.</div>
+        <input class="uname" placeholder="Your Name">
+        <input class="email" placeholder="Your Email Address">
+        <textarea class="feedback-subject" placeholder="Type Your Response Here..."></textarea>
+        <input type="submit" class="submit-button">
+    </div>
+
+    <div class="footer">
+        <div class="foot-right-side">
+            <a class="foot-button" href="#contact">Contact Us</a>
+            <a class="foot-button" href="about-us.html">About Us</a>
+            <a class="foot-button">Privacy & Terms</a>
+        </div>
+        <div class="foot-left-side">
+            <a class="foot-button" href="homepage.html">EduQuest</a>
+        </div>
+    </div>
+    <div class="overlay" id="register">
+        <div class="wrapper">
+            <h2>Registration Form</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <div class="register-container">
+                    <form>
+                        <label>Username</label>
+                        <input type="text" placeholder="Enter Username">
+                        <label>EMAIL</label>
+                        <input type="email" placeholder="Enter Email Address">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password">
+                        <button class="reg-button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scripts/basecode.js"></script>
+</body>
+</html>

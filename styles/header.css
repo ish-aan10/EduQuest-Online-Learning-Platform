@@ -1,0 +1,35 @@
+.header {
+    height: 60px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgb(50, 44, 43);
+    box-shadow: 0 2px 15px 0 black;
+    padding: 0 15px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book-icon {
+    height: 45px;
+    margin: 0 5px;
+
+}
+
+.nav-button {
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 4px;
+    font-weight: bold;
+    color: rgb(228, 197, 158);
+}

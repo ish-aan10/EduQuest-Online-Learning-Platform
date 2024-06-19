@@ -1,0 +1,85 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    color: rgb(50, 44, 43);
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(228, 197, 158);
+    border-radius: 15px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper h2 {
+    margin-top: 0;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 17px;
+    right: 25px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(50, 44, 43);
+}
+
+.wrapper .content {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(228, 197, 158);
+    padding: 20px 0;
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+    font-family: Exo, Arial;
+}
+form button {
+    background-color: rgb(50, 44, 43);
+    color: rgb(228, 197, 158);
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 7px;
+    font-family: Exo, Arial;
+    font-weight: bold;
+}
