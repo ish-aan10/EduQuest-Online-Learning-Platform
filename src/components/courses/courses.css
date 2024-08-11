@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+.courses {
+    display: flex;
+    gap: 50px;
+    color: rgb(67, 104, 80);
+}
+
+.course-categories {
+    padding: 80px 60px;
+    background: rgb(251, 250, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.course-categories h2 {
+    font-size: 50px;
+    font-family: Pacifico;
+    font-weight: 500;
+    width: 380px;
+}
+
+.course-categories ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.course-categories ul li {
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    border: 5px solid;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.course-categories ul li:hover {
+    scale: 1.1;
+    box-shadow: 0 2px 11px rgba(67, 104, 80, 0.7);
+}
+
+.course-brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.course-brief .search-bar {
+    display: flex;
+    gap: 20px;
+    padding: 12px 20px;
+    background-color: rgb(251, 250, 218);
+    border-radius: 50px;
+    width: 50vw;
+    font-size: 24px;
+}
+
+.course-brief .search-bar input {
+    width: 100%;
+    padding: 0 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: rgb(67, 104, 80);
+    font-family: Exo;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course-brief .search-bar input::placeholder {
+    color: rgb(67, 104, 80);
+}
+
+.course-brief .search-bar i {
+    cursor: pointer;
+}
+
+.course-brief .filter {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: rgb(251, 250, 218);
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.filter .difficulty, .filter .duration, .filter .rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter select {
+    background: rgb(251, 250, 218);
+    color: rgb(67, 104, 80);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: Exo;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.course-container {
+    background: rgb(251, 250, 218);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    color: rgb(67, 104, 80);
+
+}
+
+.course-container hr {
+    outline: none;
+    border: none;
+    height: 3px;
+    background: rgb(67, 104, 80);
+}
+
+.course-container .course-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.course-container .course-detail i {
+    font-size: 85px;
+    padding: 60px 160px;
+    border-radius: 15px;
+    border: 4px solid;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.course-container .course-detail i:hover {
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.7);
+    scale: 1.03;
+}
+
+.course-container .course-detail h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.course-container .course-detail p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.course-syllabus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+}
+
+.course-syllabus h2 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.course-syllabus hr {
+    margin-bottom: 5px;
+    height: 3px;
+    outline: none;
+    border: none;
+}
+
+.course-syllabus .syllabus-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 15px;
+    --scrollbar-width: 8px;
+    --mask-height: 32px;
+    padding-bottom: var(--mask-height);
+    --mask-content: linear-gradient(
+        to bottom,
+        transparent,
+        black var(--mask-height),
+        black calc(100% - var(--mask-height)),
+        transparent
+    );
+    --mask-size-content: calc(100% - var(--scrollbar-width)) 100%;
+    --mask-scrollbar: linear-gradient(black, black);
+    --mask-size-scrollbar: var(--scrollbar-width) 100%;
+    mask-image: var(--mask-content), var(--mask-scrollbar);
+    mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+    mask-position: 0 0, 100% 0;
+    scrollbar-width: thin;
+    scrollbar-color: currentColor transparent;
+    mask-repeat: no-repeat no-repeat;
+}
+
+.syllabus-content::-webkit-scrollbar {
+        display: inline;
+}
+
+.syllabus-content ul {
+    padding-left: 35px;
+}
+
+.course-container .instructor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instructor-info h2 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.instructor-info hr {
+    margin-bottom: 10px;
+}
+
+.instructor-info img {
+    width: 150px;
+    border-radius: 100px;
+    border: 5px solid rgb(67, 104, 80);
+    margin: 0 auto;
+}
+
+.instructor-info h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.instructor-info p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.enroll-btn {
+    border-radius: 50px;
+    background: rgb(67, 104, 80);
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    color: rgb(251, 250, 218);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}

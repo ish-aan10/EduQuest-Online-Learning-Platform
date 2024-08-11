@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 50px;
+    color: rgb(251, 250, 218);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: ease 0.3s;
+    cursor: default;
+}
+
+.nav-logo img {
+    width: 50px;
+}
+
+.nav-logo .nav-title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.nav-logo:hover {
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background: rgb(18, 55, 42);
+    cursor: pointer;
+}
+
+.search-box:hover input {
+    width: 350px;
+    padding: 0 10px;
+}
+
+.search-box input {
+    width: 0;
+    outline: none;
+    color: rgb(251, 250, 218);
+    border: none;
+    font-weight: 600;
+    font-family: Exo;
+    font-size: 20px;
+    transition: 0.5s;
+    background: transparent;
+}
+
+.search-box i {
+    text-decoration: none;
+    color: rgb(251, 250, 218);
+    font-size: 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    font-size: 22px;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    padding: 5px 0;
+}
+
+.nav-menu li:hover {
+    border-color: rgb(251, 250, 218);
+}
+
+.nav-action {
+    display: flex;
+    gap: 10px;
+}
+
+.user-register, .user-signin {
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(251, 250, 218);
+    background: rgb(18, 55, 42);
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.user-register:hover, .user-signin:hover {
+    opacity: 0.8;
+}

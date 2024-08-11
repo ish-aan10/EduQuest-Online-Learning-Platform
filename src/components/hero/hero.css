@@ -1,0 +1,61 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 180px 150px;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-title h1 {
+    color: rgb(251, 250, 218);
+    font-size: 96px;
+    width: 60%;
+    line-height: 120px;
+}
+
+.hero-title h1 span {
+    font-size: 120px;
+    color: rgb(67, 104, 80);
+}
+
+.hero-title p {
+    color: rgb(251, 250, 218);
+    font-size: 22px;
+    font-weight: 500;
+    width: 68%;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.register-btn, .explore-btn, .free-btn {
+    padding: 15px 30px;
+    width: 220px;
+    color: rgb(251, 250, 218);
+    background: transparent;
+    border: 4px solid rgb(251, 250, 218);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn:hover, .register-btn:hover, .free-btn:hover {
+    transform: scale(1.1);
+    background: rgb(251, 250, 218);
+    color: rgb(18, 55, 42);
+}

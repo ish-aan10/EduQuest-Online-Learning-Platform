@@ -1,0 +1,90 @@
+.fc {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgb(18, 55, 42);
+    padding: 60px 0;
+}
+
+.fc-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+    margin-left: 80px;
+    color: rgb(173, 188, 159);
+}
+
+.fc-title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.fc-title i {
+    font-size: 20px;
+    border-radius: 50px;
+    border: 5px solid rgb(173, 188, 159);
+    padding: 12px 18px;
+}
+
+.fc-courses {
+    display: flex;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 290px;
+    padding: 20px 25px;
+    border: 4px solid rgb(67, 104, 80);
+    border-radius: 25px;
+    color: rgb(173, 188, 159);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.589);
+}
+
+.container i {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+}
+
+.container .course-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .course-details h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container .course-details p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.show-btn {
+    padding: 80px 10px;
+    background-color: rgba(173, 188, 159, 0.7);
+    border-radius: 25px;
+    font-size: 25px;
+    color: rgb(18, 55, 42);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.show-btn:hover {
+    background-color: rgb(173, 188, 159);
+}

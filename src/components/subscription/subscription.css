@@ -1,0 +1,158 @@
+.subscription {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    color: rgb(251, 250, 218);
+    background: rgb(18, 55, 42);
+    padding: 60px 0;
+}
+
+.subs-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.subs-title h2 {
+    font-size: 38px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.subs-title i {
+    font-size: 30px;
+    border: 8px solid;
+    padding: 11px 20px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.subscription .sub-plans {
+    display: flex;
+    gap: 40px; 
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-right: 80px;
+    padding: 40px;
+    --scrollbar-height: 8px;
+    --mask-width: 50px;
+    padding-right: var(--mask-width);
+    --mask-content: linear-gradient(
+        to right,
+        transparent,
+        black var(--mask-width),
+        black calc(100% - var(--mask-width)),
+        transparent
+    );
+    --mask-size-content: 100% calc(100% - var(--scrollbar-height));
+    --mask-scrollbar: linear-gradient(to right, black, black);
+    --mask-size-scrollbar: 100% var(--scrollbar-height);
+    mask-image: var(--mask-content), var(--mask-scrollbar);
+    mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+    mask-position: 0 0, 0 100%;
+    mask-repeat: no-repeat no-repeat;
+    transition: ease 0.5s;
+}
+
+.scroll-left-btn {
+    border-radius: 50px;
+    background: rgba(251, 250, 218, 0.699);
+    color: rgb(18, 55, 42);
+    padding: 100px 20px;
+    font-size: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: absolute;
+    left: 435px;
+    z-index: 2;
+}
+
+.scroll-left-btn:hover {
+    background: rgb(251, 250, 218);
+}
+
+.sub-plans .plan {
+    background: rgb(18, 55, 42);
+    color: rgb(173, 188, 159);
+    border: 4px solid rgb(67, 104, 80);
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 375px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    transition: ease 0.3s;
+    gap: 10px;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.plan h3 {
+    font-size: 32px;
+}
+
+.plan p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.plan hr {
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background: rgb(67, 104, 80);
+    height: 2px;
+}
+
+.plan h4 {
+    font-size: 22px;
+}
+
+.plan ul {
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.plan .start-sub-btn {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: rgba(173, 188, 159, 0.699);
+    color: rgb(18, 55, 42);
+    padding: 10px 20px;
+    margin-top: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan .start-sub-btn:hover {
+    background: rgb(173, 188, 159);
+}
+
+.subscription .more-btn {
+    position: absolute;
+    padding: 100px 20px;
+    border: none;
+    font-size: 30px;
+    background: rgba(251, 250, 218, 0.699);
+    color: rgb(18, 55, 42);
+    border-radius: 50px;
+    margin-right: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    right: 0;
+}
+
+.subscription .more-btn:hover {
+    background: rgb(251, 250, 218);
+}

@@ -1,0 +1,149 @@
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background: rgb(18, 55, 42);
+    color: rgb(173, 188, 159);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links .footer-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.footer-links hr {
+    outline: none;
+    border: none;
+    width: 5px;
+    border-radius: 15px;
+    background: rgb(67, 104, 80);
+}
+
+.footer-links .footer-sections h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-links .footer-sections p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-links .footer-sections ul li {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-links .footer-sections .social-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links .footer-sections .social-links li {
+    font-size: 30px;
+    margin-top: 35px;
+    transition: 0.3s;
+}
+
+.footer-links .footer-sections .social-links li:hover {
+    transform: scale(1.15);
+}
+
+.footer-newsletter {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-newsletter p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-newsletter .mail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-newsletter .mail .mail-input {
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+    background: rgb(67, 104, 80);
+    padding: 20px 25px;
+    border-radius: 50px;
+}
+
+.footer-newsletter .mail .mail-input input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: Exo;
+    font-size: 20px;
+    color: rgb(173, 188, 159);
+}
+
+.footer-newsletter .mail .mail-input input::placeholder {
+    color: rgb(173, 188, 159);
+}
+
+.footer-newsletter .subscribe-button {
+    padding: 20px 25px;
+    border-radius: 50px;
+    background: rgba(251, 250, 218, 0.685);
+    color: rgb(67, 104, 80);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-newsletter .subscribe-button:hover {
+    background: rgb(251, 250, 218);
+}
+
+.copyright {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+.back-to-top-btn {
+    background: rgba(173, 188, 159, 0.74);
+    padding: 15px 23px;
+    border-radius: 50px;
+    color: rgb(18, 55, 42);
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-to-top-btn:hover {
+    background: rgb(173, 188, 159);
+}

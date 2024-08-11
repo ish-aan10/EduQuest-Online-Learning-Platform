@@ -1,0 +1,85 @@
+.testimony {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    margin: 70px 40px;
+}
+
+.student-testimonials {
+    display: flex;
+    gap: 45px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    background: rgb(67, 104, 80);
+    color: rgb(173, 188, 159);
+    border: 5px solid rgb(173, 188, 159);
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.testimonial-container .student-profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.testimonial-container .student-profile .prof-img {
+    background: rgb(18, 55, 42);
+    color: rgb(173, 188, 159);
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.testimonial-container .student-profile p {
+    color: rgb(18, 55, 42);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.testimonial-container .course-detail {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimonial-container .course-detail span {
+    font-weight: bold;
+    color: rgb(18, 55, 42);
+}
+
+.testimonial-container p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.testimony-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: rgb(173, 188, 159);
+}
+
+.testimony-title h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.testimony-title p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.testimony-title i {
+    font-size: 24px;
+    border-radius: 50px;
+    border: 10px solid;
+    padding: 15px 20px;
+}
