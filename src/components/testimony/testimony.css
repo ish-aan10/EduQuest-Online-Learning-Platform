@@ -83,3 +83,19 @@
     border: 10px solid;
     padding: 15px 20px;
 }
+
+@media (max-width: 960px) {
+    .testimony {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .testimony-title i {
+        display: none;
+    }
+    .student-testimonials {
+        flex-direction: column;
+    }
+    .testimonial-container {
+        max-width: 700px;
+    }
+}

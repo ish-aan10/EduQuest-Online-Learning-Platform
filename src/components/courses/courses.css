@@ -24,6 +24,7 @@
 
 .course-categories ul {
     list-style: none;
+    align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -272,4 +273,40 @@
     margin: 20px auto;
     cursor: pointer;
     transition: 0.3s;
+}
+
+@media (max-width: 960px) {
+    .courses {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .course-categories {
+        padding: 50px 0;
+        gap: 30px;
+    }
+    .course-categories ul li {
+        width: 500px;
+    }
+    .course-brief {
+        margin: 50px;
+        gap: 25px;
+    }
+    .course-brief .search-bar {
+        width: 80vw;
+    }
+    .course-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+}
+
+@media (max-width: 505px) {
+    .course-categories ul li {
+        width: 100%;
+    }
+    .course-brief .filter {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
 }

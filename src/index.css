@@ -9,6 +9,8 @@ body {
   font-family: Exo, Arial, Helvetica, sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/home-background.png');
   background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {

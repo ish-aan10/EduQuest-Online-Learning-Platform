@@ -8,7 +8,7 @@ const FCourses = () => {
   return (
     <div className="fc">
         <div className="fc-title">
-            <p>Featured <br /> Courses</p>
+            <p>Featured Courses</p>
             <i><FontAwesomeIcon icon={faArrowRight} /></i>
         </div>
         <div className="fc-courses">

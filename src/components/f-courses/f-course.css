@@ -3,7 +3,7 @@
     align-items: center;
     gap: 40px;
     background: rgb(18, 55, 42);
-    padding: 60px 0;
+    padding: 60px 80px;
 }
 
 .fc-title {
@@ -12,7 +12,6 @@
     align-items: center;
     gap: 30px;
     margin-right: 50px;
-    margin-left: 80px;
     color: rgb(173, 188, 159);
 }
 
@@ -87,4 +86,41 @@
 
 .show-btn:hover {
     background-color: rgb(173, 188, 159);
+}
+
+@media (max-width: 960px) {
+    .fc {
+        flex-direction: column;
+        padding: 40px 80px;
+    }
+    .fc-title {
+        flex-direction: row;
+        margin: 0;
+    }
+    .fc-courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .show-btn {
+        padding: 10px 150px;
+    }
+}
+
+@media (max-width: 505px) {
+    .fc {
+        padding: 40px 20px;
+    }
+    .fc-courses {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        width: 400px;
+        height: 220px;
+    }
+    .container i {
+        padding: 20px;
+    }
+    .container .course-details p {
+        margin-top: -5px;
+    }
 }

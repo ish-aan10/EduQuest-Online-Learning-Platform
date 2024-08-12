@@ -1,5 +1,6 @@
 .navbar {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     margin: 20px 50px;
@@ -66,32 +67,38 @@
     font-size: 20px;
 }
 
-.nav-menu ul {
+.nav-link-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu .nav-link-items ul {
     display: flex;
     gap: 20px;
 }
 
-.nav-menu li {
+.nav-menu .nav-link-items li {
     font-size: 22px;
     font-weight: bold;
     list-style: none;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     cursor: pointer;
     border-bottom: 3px solid transparent;
     padding: 5px 0;
 }
 
-.nav-menu li:hover {
-    border-color: rgb(251, 250, 218);
+.nav-menu .nav-link-items li:hover {
+    border-color: rgb(67, 104, 80);
 }
 
-.nav-action {
+.nav-link-items .nav-action {
     display: flex;
     gap: 10px;
 }
 
-.user-register, .user-signin {
+.nav-link-items .user-register, .user-signin {
     border-radius: 50px;
     padding: 12px 20px;
     font-size: 16px;
@@ -102,12 +109,57 @@
     background: rgb(18, 55, 42);
     transition: 0.5s;
     cursor: pointer;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: rgb(251, 250, 218);
 }
 
 .user-register:hover, .user-signin:hover {
     opacity: 0.8;
+}
+
+.nav-link-items.open {
+    right: 0;
+}
+
+@media (max-width: 960px) {
+    .navbar {
+        margin: 20px 30px;
+    }
+    .nav-link-items {
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: -100%;
+        margin-right: -20px;
+        padding: 20px;
+        border-radius: 25px;
+        background: rgba(18, 55, 42, 0.815);
+        transition: right 0.3s ease-in-out;
+    }
+    .nav-link-items .user-register, .user-signin {
+        background: rgb(67, 104, 80);
+    }
+    .nav-link-items ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu .nav-link-items li {
+        font-size: 18px;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 505px) {
+    .search-box {
+        display: none;
+    }
 }

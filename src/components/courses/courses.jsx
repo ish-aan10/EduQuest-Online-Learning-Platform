@@ -26,7 +26,7 @@ const Courses = () => {
             <div className="filter">
                 Filter:
                 <div className="difficulty">
-                    Difficulty:
+                    <p>Difficulty:</p>
                     <select>
                         <option selected>Beginner</option>
                         <option>Intermediate</option>
@@ -34,7 +34,7 @@ const Courses = () => {
                     </select>
                 </div>
                 <div className="duration">
-                    Duration:
+                    <p>Duration:</p>
                     <select>
                         <option selected>Short</option>
                         <option>Medium</option>
@@ -42,7 +42,7 @@ const Courses = () => {
                     </select>
                 </div>
                 <div className="rating">
-                    Rating:
+                    <p>Rating:</p>
                     <select>
                         <option>1</option>
                         <option>2</option>

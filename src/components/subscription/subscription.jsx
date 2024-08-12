@@ -40,7 +40,7 @@ const Subscription = () => {
     return ( 
         <div className="subscription">
             <div className="subs-title">
-                <h2>Our <br /> Subscription <br /> Plans</h2>
+                <h2>Our Subscription Plans</h2>
                 <i><FontAwesomeIcon icon={faArrowRight} /></i>
             </div>
             {showLeftButton && (

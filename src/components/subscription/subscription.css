@@ -1,6 +1,7 @@
 .subscription {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 70px;
     color: rgb(251, 250, 218);
     background: rgb(18, 55, 42);
@@ -155,4 +156,77 @@
 
 .subscription .more-btn:hover {
     background: rgb(251, 250, 218);
+}
+
+@media (max-width: 960px) {
+    .subscription {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .subs-title {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+    .subs-title h2 {
+        font-size: 30px;
+    }
+    .subs-title i {
+        font-size: 20px;
+        margin-left: 0;
+        border-width: 5px;
+        padding: 15px 20px;
+    }
+    .sub-plans {
+        max-width: 750px;
+        margin: auto;
+        margin-right: 0;
+    }
+    .sub-plans .plan {
+        min-width: 300px;
+        height: 700px;
+    }
+    .sub-plans .plan .start-sub-btn {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .subscription .scroll-left-btn {
+        top: 40%;
+        left: 0;
+        margin-left: 15px;
+    }
+    .subscription .more-btn {
+        top: 40%;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 505px) {
+    .subs-title h2{
+        font-size: 24px;
+    }
+    .subs-title i {
+        padding: 5px 10px;
+    }
+    .sub-plans {
+        max-width: 400px;
+    }
+    .sub-plans .plan {
+        height: 550px;
+    }
+    .sub-plans .plan h3{
+        font-size: 24px;
+    }
+    .sub-plans .plan p {
+        font-size: 15px;
+    }
+    .sub-plans .plan h4 {
+        font-size: 18px;
+    }    
+    .sub-plans .plan ul {
+        padding-left: 40px;
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
