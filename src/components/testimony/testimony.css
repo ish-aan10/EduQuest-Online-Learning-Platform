@@ -99,3 +99,39 @@
         max-width: 700px;
     }
 }
+
+@media (max-width: 505px) {
+    .testimony {
+        margin: 50px 30px;
+    }
+    .testimony-title h2 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+    .testimony-title p {
+        font-size: 20px;
+    }
+    .testimonial-container .student-profile p {
+        font-size: 18px;
+    }
+    .testimonial-container .student-profile .prof-img {
+        font-size: 17px;
+        padding: 12px 15px;
+    }
+    .testimonial-container .student-profile {
+        gap: 15px;
+    }
+    .testimonial-container .course-detail {
+        font-size: 17px;
+    }
+    .student-testimonials {
+        gap: 30px;
+    }
+    .testimonial-container {
+        padding: 15px 20px;
+        max-width: 95%;
+    }
+    .testimonial-container p {
+        font-size: 15px;
+    }
+}

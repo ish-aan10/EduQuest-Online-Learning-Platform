@@ -16,6 +16,7 @@
 }
 
 .course-categories h2 {
+    text-align: center;
     font-size: 50px;
     font-family: Pacifico;
     font-weight: 500;
@@ -90,6 +91,9 @@
     gap: 50px;
     color: rgb(251, 250, 218);
     margin: 20px 0;
+}
+
+.filter p {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -288,25 +292,69 @@
         width: 500px;
     }
     .course-brief {
-        margin: 50px;
         gap: 25px;
     }
     .course-brief .search-bar {
         width: 80vw;
     }
     .course-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         margin: 0;
     }
 }
 
 @media (max-width: 505px) {
+    .course-categories h2 {
+        font-size: 40px;
+    }
     .course-categories ul li {
         width: 100%;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .course-brief {
+        margin: 40px 35px;
+    }
+    .course-brief .search-bar {
+        font-size: 20px;
+        width: 90%;
+    }
+    .course-brief .search-bar input {
+        font-size: 18px;
     }
     .course-brief .filter {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         align-items: start;
     }
+    .course-container {
+        width: 90%;
+    }
+    .filter p {
+        font-size: 18px;
+    }
+    .filter select {
+        font-size: 13px;
+    }
+    .course-container .course-detail i {
+        padding: 30px 0;
+        font-size: 65px;
+    }
+    .course-container .course-detail h3 {
+        font-size: 17px;
+    }
+    .course-syllabus h2 {
+        font-size: 17px;
+    }
+    .syllabus-content {
+        font-size: 15px;
+    }
+    .syllabus-content ul {
+        font-size: 15px;
+    }
+    .instructor-info h2 , .instructor-info h3 {
+        font-size: 17px;
+    } 
+
 }

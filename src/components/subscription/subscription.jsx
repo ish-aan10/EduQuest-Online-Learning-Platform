@@ -43,11 +43,6 @@ const Subscription = () => {
                 <h2>Our Subscription Plans</h2>
                 <i><FontAwesomeIcon icon={faArrowRight} /></i>
             </div>
-            {showLeftButton && (
-                <div className="scroll-left-btn" onClick={scrollRight}>
-                    <i><FontAwesomeIcon icon={faArrowLeft} /></i>
-                </div>
-            )} 
             <div className="sub-plans" ref={scrollContainerRef}>
                 <div className="plan">
                     <h3>Free Plan <FontAwesomeIcon icon={faPiggyBank} /></h3>
@@ -143,9 +138,17 @@ const Subscription = () => {
                     </div>
                 </div>
             </div>
-            <div className="more-btn" onClick={scrollLeft}>
-                <FontAwesomeIcon icon={faArrowRight} />
+            <div className="sub-btn-scroller">
+                {showLeftButton && (
+                    <div className="scroll-left-btn" onClick={scrollRight}>
+                        <i><FontAwesomeIcon icon={faArrowLeft} /></i>
+                    </div>
+                )}
+                <div className="more-btn" onClick={scrollLeft}>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </div> 
             </div>
+            
         </div>
      );
 }

@@ -24,7 +24,7 @@ const Courses = () => {
                 <i><FontAwesomeIcon icon={faSearch} /></i>
             </div>
             <div className="filter">
-                Filter:
+                <p>Filter:</p>
                 <div className="difficulty">
                     <p>Difficulty:</p>
                     <select>

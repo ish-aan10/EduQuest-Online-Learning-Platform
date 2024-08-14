@@ -171,7 +171,9 @@ footer {
 
 @media (max-width: 505px) {
     .footer-links {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     .footer-links hr {
         display: block;
@@ -181,5 +183,29 @@ footer {
     .footer-newsletter .mail {
         flex-direction: column;
         align-items: start;
+    }
+    .footer-links .footer-sections h3 {
+        font-size: 20px;
+    }
+    .footer-links .footer-sections p,
+    .footer-links .footer-sections ul li {
+        font-size: 15px;
+    }
+    .footer-newsletter p {
+        font-size: 17px;
+        text-align: center;
+    }
+    .footer-newsletter .mail .mail-input {
+        font-size: 20px;
+    }
+    .footer-newsletter .mail .mail-input input {
+        font-size: 17px;
+    }
+    .footer-newsletter .subscribe-button {
+        font-size: 18px;
+        padding: 14px 18px;
+    }
+    .copyright {
+        font-size: 15px;
     }
 }

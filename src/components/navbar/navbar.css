@@ -130,14 +130,14 @@
 
 @media (max-width: 960px) {
     .navbar {
-        margin: 20px 30px;
+        margin: 20px 25px;
     }
     .nav-link-items {
         flex-direction: column;
         position: absolute;
-        top: 55px;
+        top: 45px;
         right: -100%;
-        margin-right: -20px;
+        margin-right: -7px;
         padding: 20px;
         border-radius: 25px;
         background: rgba(18, 55, 42, 0.815);
@@ -146,7 +146,7 @@
     .nav-link-items .user-register, .user-signin {
         background: rgb(67, 104, 80);
     }
-    .nav-link-items ul {
+    .nav-menu .nav-link-items ul {
         flex-direction: column;
         text-align: center;
     }
@@ -159,6 +159,22 @@
 }
 
 @media (max-width: 505px) {
+    .nav-link-items {
+        gap: 5px;
+    }
+    .nav-logo .nav-title {
+        font-size: 22px;
+    }
+    .nav-menu .nav-link-items ul {
+        gap: 0px;
+    }
+    .nav-menu .nav-link-items li {
+        font-size: 15px;
+    }
+    .nav-menu .nav-action {
+        flex-direction: column;
+        text-align: center;
+    }
     .search-box {
         display: none;
     }

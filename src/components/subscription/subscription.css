@@ -158,6 +158,11 @@
     background: rgb(251, 250, 218);
 }
 
+.sub-btn-scroller {
+    display: flex;
+    gap: 40px;
+}
+
 @media (max-width: 960px) {
     .subscription {
         flex-direction: column;
@@ -204,29 +209,46 @@
 
 @media (max-width: 505px) {
     .subs-title h2{
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: 2px;
     }
     .subs-title i {
         padding: 5px 10px;
     }
     .sub-plans {
-        max-width: 400px;
+        margin: auto;
+        max-width: 350px;
     }
     .sub-plans .plan {
-        height: 550px;
+        min-width: 275px;
+        height: 510px;
     }
     .sub-plans .plan h3{
-        font-size: 24px;
+        font-size: 22px;
     }
     .sub-plans .plan p {
-        font-size: 15px;
+        font-size: 14px;
     }
     .sub-plans .plan h4 {
-        font-size: 18px;
+        font-size: 16px;
     }    
     .sub-plans .plan ul {
         padding-left: 40px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
+    }
+    .sub-plans .plan .start-sub-btn {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .subscription .scroll-left-btn {
+        position: relative;
+        margin-left: 0;
+        padding: 12px 20px;
+    }
+    .subscription .more-btn {
+        position: relative;
+        margin-right: 0;
+        padding: 12px 20px;
     }
 }

@@ -92,14 +92,23 @@
     .fc {
         flex-direction: column;
         padding: 40px 80px;
+        gap: 20px;
     }
     .fc-title {
         flex-direction: row;
         margin: 0;
+        gap: 15px;
+    }
+    .fc-title p {
+        font-size: 25px;
     }
     .fc-courses {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 800px;
+        padding: 20px;
+        overflow: scroll;
+    }
+    .container {
+        min-width: 290px;
     }
     .show-btn {
         padding: 10px 150px;
@@ -108,17 +117,19 @@
 
 @media (max-width: 505px) {
     .fc {
-        padding: 40px 20px;
+        padding: 40px 35px;
     }
     .fc-courses {
-        grid-template-columns: 1fr;
-    }
-    .container {
-        width: 400px;
-        height: 220px;
+        width: 380px;
     }
     .container i {
-        padding: 20px;
+        padding: 35px;
+    }
+    .container .course-details h4 {
+        font-size: 15px;
+    }
+    .container .course-details p {
+        font-size: 12px;
     }
     .container .course-details p {
         margin-top: -5px;
