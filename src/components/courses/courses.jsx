@@ -11,11 +11,11 @@ const Courses = () => {
         <div className="course-categories">
             <h2>Course Categories</h2>
             <ul>
-                <li>Technology <FontAwesomeIcon icon={faMicrochip} /></li>
-                <li>Business <FontAwesomeIcon icon={faChartLine} /></li>
-                <li>Arts <FontAwesomeIcon icon={faBank} /></li>
-                <li>Science <FontAwesomeIcon icon={faFlask} /></li>
-                <li>Maths & Logic <FontAwesomeIcon icon={faCalculator} /></li>
+                <li><p>Technology</p><FontAwesomeIcon icon={faMicrochip} /></li>
+                <li><p>Business</p><FontAwesomeIcon icon={faChartLine} /></li>
+                <li><p>Arts</p><FontAwesomeIcon icon={faBank} /></li>
+                <li><p>Science</p><FontAwesomeIcon icon={faFlask} /></li>
+                <li><p>Maths & Logic</p><FontAwesomeIcon icon={faCalculator} /></li>
             </ul>
         </div>
         <div className="course-brief">

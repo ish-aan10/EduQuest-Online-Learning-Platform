@@ -169,7 +169,7 @@ footer {
     }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 515px) {
     .footer-links {
         display: flex;
         flex-direction: column;
@@ -207,5 +207,9 @@ footer {
     }
     .copyright {
         font-size: 15px;
+    }
+    .back-to-top-btn {
+        font-size: 20px;
+        padding: 5px 40px;
     }
 }

@@ -115,15 +115,27 @@
     }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 515px) {
     .fc {
         padding: 40px 35px;
     }
     .fc-courses {
-        width: 380px;
+        flex-direction: column;
+        overflow: none;
+        align-items: center;
+        gap: 20px;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
     }
     .container i {
-        padding: 35px;
+        padding: 0px;
+        font-size: 35px;
+    }
+    .container p {
+        display: none;
     }
     .container .course-details h4 {
         font-size: 15px;

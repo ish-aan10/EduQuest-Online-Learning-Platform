@@ -58,7 +58,7 @@ const Subscription = () => {
                         <li>No certificates</li>
                     </ul>
                     <div className="start-sub-btn">
-                        Start Subscription <FontAwesomeIcon icon={faArrowRight}/>
+                        Current Plan
                     </div>
                 </div>
                 <div className="plan">

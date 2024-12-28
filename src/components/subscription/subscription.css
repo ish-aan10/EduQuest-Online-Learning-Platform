@@ -190,7 +190,7 @@
     }
     .sub-plans .plan {
         min-width: 300px;
-        height: 700px;
+        height: 650px;
     }
     .sub-plans .plan .start-sub-btn {
         font-size: 18px;
@@ -207,7 +207,7 @@
     }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 515px) {
     .subs-title h2{
         font-size: 22px;
         letter-spacing: 2px;
@@ -217,7 +217,7 @@
     }
     .sub-plans {
         margin: auto;
-        max-width: 350px;
+        max-width: 390px;
     }
     .sub-plans .plan {
         min-width: 275px;

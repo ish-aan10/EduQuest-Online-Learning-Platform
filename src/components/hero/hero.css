@@ -15,7 +15,7 @@
 .hero-title h1 {
     color: rgb(251, 250, 218);
     font-size: 96px;
-    width: 60%;
+    width: 70%;
     line-height: 120px;
 }
 
@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-.register-btn, .explore-btn, .free-btn {
+.hero-buttons div {
     padding: 15px 30px;
     width: 220px;
     color: rgb(251, 250, 218);
@@ -54,7 +54,7 @@
     transition: 0.3s;
 }
 
-.explore-btn:hover, .register-btn:hover, .free-btn:hover {
+.hero-buttons div:hover {
     transform: scale(1.1);
     background: rgb(251, 250, 218);
     color: rgb(18, 55, 42);
@@ -66,13 +66,17 @@
         gap: 100px;
         margin: 100px 150px;
     }
+    .hero-title h1 {
+        font-size: 60px;
+        line-height: 100px;
+    }
     .hero-buttons div{
-        width: 600px;
+        width: 450px;
         font-size: 24px;
     }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 515px) {
     .hero {
         gap: 50px;
         margin: 80px 45px;
@@ -89,11 +93,12 @@
         font-size: 16px;
     }
     .hero-buttons {
-        gap: 30px;
+        gap: 20px;
     }
     .hero-buttons div {
         width: 300px;
-        font-size: 18px;
+        padding: 10px 20px;
+        font-size: 16px;
     }
 }
 
